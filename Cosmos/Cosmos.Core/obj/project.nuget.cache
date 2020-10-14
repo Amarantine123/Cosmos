@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "NALkPFSLtPcAWKhb7+LKq/RCdZrtHrmrP7D2a4s5bMc2FlRmqGidOawXuoueFXjyBgT2/j1GKYNRUc2j7Nn3PA==",
+  "success": true,
+  "projectFilePath": "C:\\Source\\NetCore\\Cosmos\\Cosmos\\Cosmos.Core\\Cosmos.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\baron\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.9\\microsoft.extensions.dependencyinjection.abstractions.3.1.9.nupkg.sha512"
+  ],
+  "logs": []
+}

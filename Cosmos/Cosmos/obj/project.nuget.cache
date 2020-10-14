@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "PfD7Kl5NYdqbFMQSTXuQHc8HJSpaybriBWiJ7NUWvvbSfmFzJo/k9ru941MAUTRU5ST4YCC0A2zcjXleuH9cnA==",
+  "success": true,
+  "projectFilePath": "C:\\Source\\NetCore\\Cosmos\\Cosmos\\Cosmos\\Cosmos.WebApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\baron\\.nuget\\packages\\autofac\\6.0.0\\autofac.6.0.0.nupkg.sha512",
+    "C:\\Users\\baron\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.0.2\\autofac.extensions.dependencyinjection.7.0.2.nupkg.sha512",
+    "C:\\Users\\baron\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.9\\microsoft.extensions.dependencyinjection.abstractions.3.1.9.nupkg.sha512",
+    "C:\\Users\\baron\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

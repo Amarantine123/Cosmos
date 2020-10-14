@@ -1,0 +1,5 @@
+C:\Source\NetCore\Cosmos\Cosmos\Cosmos.Core\bin\Debug\netcoreapp3.1\Cosmos.Core.deps.json
+C:\Source\NetCore\Cosmos\Cosmos\Cosmos.Core\bin\Debug\netcoreapp3.1\Cosmos.Core.dll
+C:\Source\NetCore\Cosmos\Cosmos\Cosmos.Core\obj\Debug\netcoreapp3.1\Cosmos.Core.csprojAssemblyReference.cache
+C:\Source\NetCore\Cosmos\Cosmos\Cosmos.Core\obj\Debug\netcoreapp3.1\Cosmos.Core.AssemblyInfoInputs.cache
+C:\Source\NetCore\Cosmos\Cosmos\Cosmos.Core\obj\Debug\netcoreapp3.1\Cosmos.Core.AssemblyInfo.cs

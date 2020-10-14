@@ -1,0 +1,17 @@
+C:\Source\NetCore\Cosmos\Cosmos\Cosmos\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Source\NetCore\Cosmos\Cosmos\Cosmos\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Source\NetCore\Cosmos\Cosmos\Cosmos\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Source\NetCore\Cosmos\Cosmos\Cosmos\bin\Debug\netcoreapp3.1\Cosmos.exe
+C:\Source\NetCore\Cosmos\Cosmos\Cosmos\bin\Debug\netcoreapp3.1\Cosmos.deps.json
+C:\Source\NetCore\Cosmos\Cosmos\Cosmos\bin\Debug\netcoreapp3.1\Cosmos.runtimeconfig.json
+C:\Source\NetCore\Cosmos\Cosmos\Cosmos\bin\Debug\netcoreapp3.1\Cosmos.runtimeconfig.dev.json
+C:\Source\NetCore\Cosmos\Cosmos\Cosmos\bin\Debug\netcoreapp3.1\Cosmos.dll
+C:\Source\NetCore\Cosmos\Cosmos\Cosmos\bin\Debug\netcoreapp3.1\Cosmos.pdb
+C:\Source\NetCore\Cosmos\Cosmos\Cosmos\obj\Debug\netcoreapp3.1\Cosmos.AssemblyInfoInputs.cache
+C:\Source\NetCore\Cosmos\Cosmos\Cosmos\obj\Debug\netcoreapp3.1\Cosmos.AssemblyInfo.cs
+C:\Source\NetCore\Cosmos\Cosmos\Cosmos\obj\Debug\netcoreapp3.1\Cosmos.RazorTargetAssemblyInfo.cache
+C:\Source\NetCore\Cosmos\Cosmos\Cosmos\obj\Debug\netcoreapp3.1\staticwebassets\Cosmos.StaticWebAssets.Manifest.cache
+C:\Source\NetCore\Cosmos\Cosmos\Cosmos\obj\Debug\netcoreapp3.1\staticwebassets\Cosmos.StaticWebAssets.xml
+C:\Source\NetCore\Cosmos\Cosmos\Cosmos\obj\Debug\netcoreapp3.1\Cosmos.dll
+C:\Source\NetCore\Cosmos\Cosmos\Cosmos\obj\Debug\netcoreapp3.1\Cosmos.pdb
+C:\Source\NetCore\Cosmos\Cosmos\Cosmos\obj\Debug\netcoreapp3.1\Cosmos.genruntimeconfig.cache
