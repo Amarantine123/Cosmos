@@ -32,6 +32,12 @@ namespace Cosmos
 
             services.UseMethodsModelParameters().UseMethodsGeneralParameters();
 
+            services.AddSession();
+            services.AddMemoryCache();
+            services.AddMvc(options =>
+            {
+                //options.Filters.Add(typeof(ApiAuthorizeFilter))
+            });
 
             services.AddControllers();
         }

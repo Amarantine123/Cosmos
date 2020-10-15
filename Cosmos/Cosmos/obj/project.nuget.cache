@@ -1,13 +1,26 @@
 {
   "version": 2,
-  "dgSpecHash": "PfD7Kl5NYdqbFMQSTXuQHc8HJSpaybriBWiJ7NUWvvbSfmFzJo/k9ru941MAUTRU5ST4YCC0A2zcjXleuH9cnA==",
+  "dgSpecHash": "9/rD0C5AYLxgbdPWVGwf91RabB+L7gcyE4OvAKmhBQBQznQKxyOQsRgxThrh/Vjwy/U5PAonrTvHhWq6WGGozg==",
   "success": true,
   "projectFilePath": "C:\\Source\\NetCore\\Cosmos\\Cosmos\\Cosmos\\Cosmos.WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\baron\\.nuget\\packages\\autofac\\6.0.0\\autofac.6.0.0.nupkg.sha512",
     "C:\\Users\\baron\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.0.2\\autofac.extensions.dependencyinjection.7.0.2.nupkg.sha512",
+    "C:\\Users\\baron\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.9\\microsoft.aspnetcore.authorization.3.1.9.nupkg.sha512",
+    "C:\\Users\\baron\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\baron\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
+    "C:\\Users\\baron\\.nuget\\packages\\microsoft.aspnetcore.metadata\\3.1.9\\microsoft.aspnetcore.metadata.3.1.9.nupkg.sha512",
+    "C:\\Users\\baron\\.nuget\\packages\\microsoft.aspnetcore.mvc.abstractions\\2.2.0\\microsoft.aspnetcore.mvc.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\baron\\.nuget\\packages\\microsoft.aspnetcore.routing.abstractions\\2.2.0\\microsoft.aspnetcore.routing.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\baron\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.9\\microsoft.extensions.configuration.abstractions.3.1.9.nupkg.sha512",
     "C:\\Users\\baron\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.9\\microsoft.extensions.dependencyinjection.abstractions.3.1.9.nupkg.sha512",
-    "C:\\Users\\baron\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512"
+    "C:\\Users\\baron\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.9\\microsoft.extensions.logging.abstractions.3.1.9.nupkg.sha512",
+    "C:\\Users\\baron\\.nuget\\packages\\microsoft.extensions.options\\3.1.9\\microsoft.extensions.options.3.1.9.nupkg.sha512",
+    "C:\\Users\\baron\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.9\\microsoft.extensions.primitives.3.1.9.nupkg.sha512",
+    "C:\\Users\\baron\\.nuget\\packages\\microsoft.net.http.headers\\2.2.0\\microsoft.net.http.headers.2.2.0.nupkg.sha512",
+    "C:\\Users\\baron\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
+    "C:\\Users\\baron\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.text.encodings.web\\4.5.0\\system.text.encodings.web.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }
