@@ -1,7 +1,6 @@
 C:\Source\NetCore\Cosmos\Cosmos\Cosmos.Entity\bin\Debug\netcoreapp3.1\Cosmos.Entity.deps.json
 C:\Source\NetCore\Cosmos\Cosmos\Cosmos.Entity\bin\Debug\netcoreapp3.1\Cosmos.Entity.dll
 C:\Source\NetCore\Cosmos\Cosmos\Cosmos.Entity\bin\Debug\netcoreapp3.1\Cosmos.Entity.pdb
-C:\Source\NetCore\Cosmos\Cosmos\Cosmos.Entity\obj\Debug\netcoreapp3.1\Cosmos.Entity.csprojAssemblyReference.cache
 C:\Source\NetCore\Cosmos\Cosmos\Cosmos.Entity\obj\Debug\netcoreapp3.1\Cosmos.Entity.AssemblyInfoInputs.cache
 C:\Source\NetCore\Cosmos\Cosmos\Cosmos.Entity\obj\Debug\netcoreapp3.1\Cosmos.Entity.AssemblyInfo.cs
 C:\Source\NetCore\Cosmos\Cosmos\Cosmos.Entity\obj\Debug\netcoreapp3.1\Cosmos.Entity.csproj.CoreCompileInputs.cache

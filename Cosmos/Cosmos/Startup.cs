@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Cosmos.Core.Extension;
+using Cosmos.Core.Filters;
 
 namespace Cosmos
 {
@@ -36,7 +37,7 @@ namespace Cosmos
             services.AddMemoryCache();
             services.AddMvc(options =>
             {
-                //options.Filters.Add(typeof(ApiAuthorizeFilter))
+                options.Filters.Add(typeof(ApiAuthorizeFilter));
             });
 
             services.AddControllers();

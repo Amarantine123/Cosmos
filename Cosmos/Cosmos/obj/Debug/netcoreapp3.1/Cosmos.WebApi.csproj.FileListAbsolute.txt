@@ -34,3 +34,6 @@ C:\Source\NetCore\Cosmos\Cosmos\Cosmos\obj\Debug\netcoreapp3.1\staticwebassets\C
 C:\Source\NetCore\Cosmos\Cosmos\Cosmos\obj\Debug\netcoreapp3.1\Cosmos.WebApi.dll
 C:\Source\NetCore\Cosmos\Cosmos\Cosmos\obj\Debug\netcoreapp3.1\Cosmos.WebApi.pdb
 C:\Source\NetCore\Cosmos\Cosmos\Cosmos\obj\Debug\netcoreapp3.1\Cosmos.WebApi.genruntimeconfig.cache
+C:\Source\NetCore\Cosmos\Cosmos\Cosmos\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Source\NetCore\Cosmos\Cosmos\Cosmos\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Source\NetCore\Cosmos\Cosmos\Cosmos\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll

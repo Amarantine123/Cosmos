@@ -17,10 +17,12 @@ namespace Cosmos.Core.Filters
         {
             if (context.ActionDescriptor.EndpointMetadata.Any(item=>item is AllowAnonymousAttribute))
             {
-                //if (context.Filters.Where(item=>item is IFixedTokenFilter))
-                //{
-
-                //}
+                // 如果使用了固定的Token不过期, 直接对token的合法性以及token是否存在进行验证
+                if (context.Filters.Where(item => item is IFixedTokenFilter).FirstOrDefault() is IFixedTokenFilter fixedTokenFilter)
+                {
+                    fixedTokenFilter.OnAuthorization(context);
+                    return;
+                }
             }
         }
     }

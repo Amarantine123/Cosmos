@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using Cosmos.Core.Configuration;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Filters;
 using System;
 using System.Collections.Generic;
@@ -8,6 +9,7 @@ namespace Cosmos.Core.Filters
 {
    public interface IFixedTokenFilter:IFilterMetadata
     {
+        // Called early in the filter pipeline to confirm request is authorized.
         AuthorizationFilterContext OnAuthorization(AuthorizationFilterContext context);
     }
 
@@ -18,7 +20,13 @@ namespace Cosmos.Core.Filters
             string fixedToken = "";
             if (!context.HttpContext.User.Identity.IsAuthenticated)
             {
-                //fixedToken=context.HttpContext.Request.Headers[AppSetting]
+                fixedToken = context.HttpContext.Request.Headers[AppSetting.TokenHeaderName];
+                fixedToken = fixedToken?.Replace("Bearer", "");
+
+                if (string.IsNullOrEmpty(fixedToken))
+                {
+                    //return context.
+                }
             }
             return context;
         }
