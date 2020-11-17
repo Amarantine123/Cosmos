@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
 
-namespace Cosmos.Entity.DomainModels.SystemEntity
+namespace Cosmos.Entity.DomainModels
 {
     /// <summary>
     /// Login Info

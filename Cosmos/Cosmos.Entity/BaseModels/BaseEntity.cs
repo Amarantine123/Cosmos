@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Cosmos.Entity.BaseModels
+namespace Cosmos.Entity
 {
     public class BaseEntity
     {

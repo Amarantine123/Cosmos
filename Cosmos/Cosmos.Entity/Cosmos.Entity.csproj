@@ -4,4 +4,23 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="AttributeModels\EntityAttributeEntity.cs" />
+    <Compile Remove="DomainModels\System.Entity\Sys_MenuRoleEntity.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DomainModels\Core.Entity\" />
+    <Folder Include="DomainModels\Api.Entity\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="AttributeModels\EntityAttributeEntity.cs" />
+    <None Include="DomainModels\System.Entity\Sys_MenuRoleEntity.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
 </Project>

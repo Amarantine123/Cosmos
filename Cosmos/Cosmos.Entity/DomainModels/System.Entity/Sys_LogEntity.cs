@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Cosmos.Entity.DomainModels.SystemEntity
+namespace Cosmos.Entity.DomainModels
 {
   public  class Sys_LogEntity
     {
