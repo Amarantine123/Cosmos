@@ -10,3 +10,14 @@ C:\Source\NetCore\Cosmos\Cosmos\Cosmos.Core\obj\Debug\netcoreapp3.1\Cosmos.Core.
 C:\Source\NetCore\Cosmos\Cosmos\Cosmos.Core\obj\Debug\netcoreapp3.1\Cosmos.Core.dll
 C:\Source\NetCore\Cosmos\Cosmos\Cosmos.Core\obj\Debug\netcoreapp3.1\Cosmos.Core.pdb
 C:\Source\NetCore\Cosmos\Cosmos\Cosmos.Core\obj\Debug\netcoreapp3.1\Cosmos.Core.csproj.CoreCompileInputs.cache
+C:\Study\MyProjects\Cosmos\Cosmos\Cosmos.Core\obj\Debug\netcoreapp3.1\Cosmos.Core.csprojAssemblyReference.cache
+C:\Study\MyProjects\Cosmos\Cosmos\Cosmos.Core\obj\Debug\netcoreapp3.1\Cosmos.Core.AssemblyInfoInputs.cache
+C:\Study\MyProjects\Cosmos\Cosmos\Cosmos.Core\obj\Debug\netcoreapp3.1\Cosmos.Core.AssemblyInfo.cs
+C:\Study\MyProjects\Cosmos\Cosmos\Cosmos.Core\obj\Debug\netcoreapp3.1\Cosmos.Core.dll
+C:\Study\MyProjects\Cosmos\Cosmos\Cosmos.Core\obj\Debug\netcoreapp3.1\Cosmos.Core.pdb
+C:\Study\MyProjects\Cosmos\Cosmos\Cosmos.Core\bin\Debug\netcoreapp3.1\Cosmos.Core.deps.json
+C:\Study\MyProjects\Cosmos\Cosmos\Cosmos.Core\bin\Debug\netcoreapp3.1\Cosmos.Core.dll
+C:\Study\MyProjects\Cosmos\Cosmos\Cosmos.Core\bin\Debug\netcoreapp3.1\Cosmos.Core.pdb
+C:\Study\MyProjects\Cosmos\Cosmos\Cosmos.Core\bin\Debug\netcoreapp3.1\Cosmos.Entity.dll
+C:\Study\MyProjects\Cosmos\Cosmos\Cosmos.Core\bin\Debug\netcoreapp3.1\Cosmos.Entity.pdb
+C:\Study\MyProjects\Cosmos\Cosmos\Cosmos.Core\obj\Debug\netcoreapp3.1\Cosmos.Core.csproj.CopyComplete

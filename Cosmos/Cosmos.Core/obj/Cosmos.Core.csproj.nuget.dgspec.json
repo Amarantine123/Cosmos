@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Source\\NetCore\\Cosmos\\Cosmos\\Cosmos.Core\\Cosmos.Core.csproj": {}
+    "C:\\Study\\MyProjects\\Cosmos\\Cosmos\\Cosmos.Core\\Cosmos.Core.csproj": {}
   },
   "projects": {
-    "C:\\Source\\NetCore\\Cosmos\\Cosmos\\Cosmos.Core\\Cosmos.Core.csproj": {
+    "C:\\Study\\MyProjects\\Cosmos\\Cosmos\\Cosmos.Core\\Cosmos.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Source\\NetCore\\Cosmos\\Cosmos\\Cosmos.Core\\Cosmos.Core.csproj",
+        "projectUniqueName": "C:\\Study\\MyProjects\\Cosmos\\Cosmos\\Cosmos.Core\\Cosmos.Core.csproj",
         "projectName": "Cosmos.Core",
-        "projectPath": "C:\\Source\\NetCore\\Cosmos\\Cosmos\\Cosmos.Core\\Cosmos.Core.csproj",
+        "projectPath": "C:\\Study\\MyProjects\\Cosmos\\Cosmos\\Cosmos.Core\\Cosmos.Core.csproj",
         "packagesPath": "C:\\Users\\baron\\.nuget\\packages\\",
-        "outputPath": "C:\\Source\\NetCore\\Cosmos\\Cosmos\\Cosmos.Core\\obj\\",
+        "outputPath": "C:\\Study\\MyProjects\\Cosmos\\Cosmos\\Cosmos.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -32,8 +32,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Source\\NetCore\\Cosmos\\Cosmos\\Cosmos.Entity\\Cosmos.Entity.csproj": {
-                "projectPath": "C:\\Source\\NetCore\\Cosmos\\Cosmos\\Cosmos.Entity\\Cosmos.Entity.csproj"
+              "C:\\Study\\MyProjects\\Cosmos\\Cosmos\\Cosmos.Entity\\Cosmos.Entity.csproj": {
+                "projectPath": "C:\\Study\\MyProjects\\Cosmos\\Cosmos\\Cosmos.Entity\\Cosmos.Entity.csproj"
               }
             }
           }
@@ -49,7 +49,7 @@
           "dependencies": {
             "Microsoft.AspNetCore.Authorization": {
               "target": "Package",
-              "version": "[3.1.9, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.AspNetCore.Mvc.Abstractions": {
               "target": "Package",
@@ -59,13 +59,25 @@
               "target": "Package",
               "version": "[2.2.5, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
             "Microsoft.Extensions.Configuration.Abstractions": {
               "target": "Package",
-              "version": "[3.1.9, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
-              "version": "[3.1.9, )"
+              "version": "[5.0.0, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[8.0.22, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
             }
           },
           "imports": [
@@ -87,14 +99,14 @@
         }
       }
     },
-    "C:\\Source\\NetCore\\Cosmos\\Cosmos\\Cosmos.Entity\\Cosmos.Entity.csproj": {
+    "C:\\Study\\MyProjects\\Cosmos\\Cosmos\\Cosmos.Entity\\Cosmos.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Source\\NetCore\\Cosmos\\Cosmos\\Cosmos.Entity\\Cosmos.Entity.csproj",
+        "projectUniqueName": "C:\\Study\\MyProjects\\Cosmos\\Cosmos\\Cosmos.Entity\\Cosmos.Entity.csproj",
         "projectName": "Cosmos.Entity",
-        "projectPath": "C:\\Source\\NetCore\\Cosmos\\Cosmos\\Cosmos.Entity\\Cosmos.Entity.csproj",
+        "projectPath": "C:\\Study\\MyProjects\\Cosmos\\Cosmos\\Cosmos.Entity\\Cosmos.Entity.csproj",
         "packagesPath": "C:\\Users\\baron\\.nuget\\packages\\",
-        "outputPath": "C:\\Source\\NetCore\\Cosmos\\Cosmos\\Cosmos.Entity\\obj\\",
+        "outputPath": "C:\\Study\\MyProjects\\Cosmos\\Cosmos\\Cosmos.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -125,6 +137,12 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
