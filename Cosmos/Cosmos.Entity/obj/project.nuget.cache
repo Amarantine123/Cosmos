@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+4CokUSZ7Nas+Wu1+0M7FiVLFOqjmHcxomm+agnbckNZug4SBOR6+OORkX1BffjAAzYDB1KG8846TQmNtWxKmg==",
+  "dgSpecHash": "NlIMmtrifHZ+lqOEsa2hWRisUc54Dg5Pt82SbpO8V3UUK5uyeDlGvxUvp1RxNpf26oTg0ijSntm7IViNEb2A3A==",
   "success": true,
-  "projectFilePath": "C:\\Study\\MyProjects\\Cosmos\\Cosmos\\Cosmos.Entity\\Cosmos.Entity.csproj",
+  "projectFilePath": "G:\\H-WorkStation\\NetCore\\Cosmos\\Cosmos\\Cosmos.Entity\\Cosmos.Entity.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\baron\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
   ],

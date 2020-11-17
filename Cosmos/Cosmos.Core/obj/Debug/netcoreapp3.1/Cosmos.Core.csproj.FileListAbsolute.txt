@@ -21,3 +21,9 @@ C:\Study\MyProjects\Cosmos\Cosmos\Cosmos.Core\bin\Debug\netcoreapp3.1\Cosmos.Cor
 C:\Study\MyProjects\Cosmos\Cosmos\Cosmos.Core\bin\Debug\netcoreapp3.1\Cosmos.Entity.dll
 C:\Study\MyProjects\Cosmos\Cosmos\Cosmos.Core\bin\Debug\netcoreapp3.1\Cosmos.Entity.pdb
 C:\Study\MyProjects\Cosmos\Cosmos\Cosmos.Core\obj\Debug\netcoreapp3.1\Cosmos.Core.csproj.CopyComplete
+G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos.Core\obj\Debug\netcoreapp3.1\Cosmos.Core.csprojAssemblyReference.cache
+G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos.Core\obj\Debug\netcoreapp3.1\Cosmos.Core.AssemblyInfoInputs.cache
+G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos.Core\obj\Debug\netcoreapp3.1\Cosmos.Core.AssemblyInfo.cs
+G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos.Core\obj\Debug\netcoreapp3.1\Cosmos.Core.csproj.CoreCompileInputs.cache
+G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos.Core\obj\Debug\netcoreapp3.1\Cosmos.Core.dll
+G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos.Core\obj\Debug\netcoreapp3.1\Cosmos.Core.pdb

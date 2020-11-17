@@ -1,0 +1,5 @@
+G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos.Core\obj\Debug\net5.0\Cosmos.Core.csprojAssemblyReference.cache
+G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos.Core\obj\Debug\net5.0\Cosmos.Core.GeneratedMSBuildEditorConfig.editorconfig
+G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos.Core\obj\Debug\net5.0\Cosmos.Core.AssemblyInfoInputs.cache
+G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos.Core\obj\Debug\net5.0\Cosmos.Core.AssemblyInfo.cs
+G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos.Core\obj\Debug\net5.0\Cosmos.Core.csproj.CoreCompileInputs.cache

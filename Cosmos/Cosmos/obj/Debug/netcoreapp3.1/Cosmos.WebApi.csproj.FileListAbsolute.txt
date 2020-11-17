@@ -37,3 +37,11 @@ C:\Source\NetCore\Cosmos\Cosmos\Cosmos\obj\Debug\netcoreapp3.1\Cosmos.WebApi.gen
 C:\Source\NetCore\Cosmos\Cosmos\Cosmos\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Source\NetCore\Cosmos\Cosmos\Cosmos\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
 C:\Source\NetCore\Cosmos\Cosmos\Cosmos\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos\obj\Debug\netcoreapp3.1\Cosmos.WebApi.csprojAssemblyReference.cache
+G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos\obj\Debug\netcoreapp3.1\Cosmos.WebApi.AssemblyInfoInputs.cache
+G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos\obj\Debug\netcoreapp3.1\Cosmos.WebApi.AssemblyInfo.cs
+G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos\obj\Debug\netcoreapp3.1\Cosmos.WebApi.csproj.CoreCompileInputs.cache
+G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos\obj\Debug\netcoreapp3.1\Cosmos.WebApi.MvcApplicationPartsAssemblyInfo.cs
+G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos\obj\Debug\netcoreapp3.1\Cosmos.WebApi.MvcApplicationPartsAssemblyInfo.cache
+G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos\obj\Debug\netcoreapp3.1\Cosmos.WebApi.dll
+G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos\obj\Debug\netcoreapp3.1\Cosmos.WebApi.pdb

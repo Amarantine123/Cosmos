@@ -1,0 +1,6 @@
+G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos\obj\Debug\net5.0\Cosmos.WebApi.csprojAssemblyReference.cache
+G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos\obj\Debug\net5.0\Cosmos.WebApi.GeneratedMSBuildEditorConfig.editorconfig
+G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos\obj\Debug\net5.0\Cosmos.WebApi.AssemblyInfoInputs.cache
+G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos\obj\Debug\net5.0\Cosmos.WebApi.AssemblyInfo.cs
+G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos\obj\Debug\net5.0\Cosmos.WebApi.csproj.CoreCompileInputs.cache
+G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos\obj\Debug\net5.0\Cosmos.WebApi.MvcApplicationPartsAssemblyInfo.cache

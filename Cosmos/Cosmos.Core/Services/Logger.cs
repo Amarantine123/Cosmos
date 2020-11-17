@@ -1,5 +1,5 @@
 ﻿using Cosmos.Core.Configuration;
-using Cosmos.Entity.System;
+using Cosmos.Entity.DomainModels;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -17,7 +17,7 @@ namespace Cosmos.Core.Services
             Task.Run(() => { Start(); });
         }
         public static readonly object _logger = new object();
-        public static Queue<Sys_Log> loggerQueueData = new Queue<Sys_Log>();
+        public static Queue<Sys_LogEntity> loggerQueueData = new Queue<Sys_LogEntity>();
         private static DateTime lastClearFileDT = DateTime.Now.AddDays(-1);
         private static string _loggerPath=AppSetting.DownLoadPath+"Logger\\Queue\\";
 
@@ -73,7 +73,7 @@ namespace Cosmos.Core.Services
         /// <param name="queueTable"></param>
         private static void DequeueToTable(DataTable queueTable)
         {
-            Sys_Log log = loggerQueueData.Dequeue();// 出列
+            Sys_LogEntity log = loggerQueueData.Dequeue();// 出列
             DataRow row = queueTable.NewRow();
 
 
