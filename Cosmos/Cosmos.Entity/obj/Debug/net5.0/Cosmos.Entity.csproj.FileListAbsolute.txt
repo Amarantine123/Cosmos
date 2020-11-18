@@ -9,3 +9,15 @@ G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos.Entity\obj\Debug\net5.0\Cosmos.Ent
 G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos.Entity\obj\Debug\net5.0\Cosmos.Entity.dll
 G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos.Entity\obj\Debug\net5.0\ref\Cosmos.Entity.dll
 G:\H-WorkStation\NetCore\Cosmos\Cosmos\Cosmos.Entity\obj\Debug\net5.0\Cosmos.Entity.pdb
+C:\Study\MyProjects\Cosmos\Cosmos\Cosmos.Entity\obj\Debug\net5.0\Cosmos.Entity.dll
+C:\Study\MyProjects\Cosmos\Cosmos\Cosmos.Entity\obj\Debug\net5.0\Cosmos.Entity.pdb
+C:\Study\MyProjects\Cosmos\Cosmos\Cosmos.Entity\bin\Debug\net5.0\Cosmos.Entity.deps.json
+C:\Study\MyProjects\Cosmos\Cosmos\Cosmos.Entity\bin\Debug\net5.0\Cosmos.Entity.dll
+C:\Study\MyProjects\Cosmos\Cosmos\Cosmos.Entity\bin\Debug\net5.0\ref\Cosmos.Entity.dll
+C:\Study\MyProjects\Cosmos\Cosmos\Cosmos.Entity\bin\Debug\net5.0\Cosmos.Entity.pdb
+C:\Study\MyProjects\Cosmos\Cosmos\Cosmos.Entity\obj\Debug\net5.0\Cosmos.Entity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Study\MyProjects\Cosmos\Cosmos\Cosmos.Entity\obj\Debug\net5.0\Cosmos.Entity.AssemblyInfoInputs.cache
+C:\Study\MyProjects\Cosmos\Cosmos\Cosmos.Entity\obj\Debug\net5.0\Cosmos.Entity.AssemblyInfo.cs
+C:\Study\MyProjects\Cosmos\Cosmos\Cosmos.Entity\obj\Debug\net5.0\Cosmos.Entity.csproj.CoreCompileInputs.cache
+C:\Study\MyProjects\Cosmos\Cosmos\Cosmos.Entity\obj\Debug\net5.0\ref\Cosmos.Entity.dll
+C:\Study\MyProjects\Cosmos\Cosmos\Cosmos.Entity\obj\Debug\net5.0\Cosmos.Entity.csprojAssemblyReference.cache

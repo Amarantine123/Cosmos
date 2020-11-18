@@ -9,7 +9,7 @@ using System.Text;
 namespace Cosmos.Entity.DomainModels
 {
     [JsonObject]
-    public class Sys_UserLoginInfoEntity:BaseEntity
+    public class User_LoginInfoEntity:BaseEntity
     {
 
         [JsonProperty("user_Id")]

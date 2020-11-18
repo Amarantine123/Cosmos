@@ -1,10 +1,10 @@
 ﻿using Cosmos.Core.Configuration;
 using Cosmos.Core.Const;
 using Cosmos.Core.Enums;
+using Npgsql;
 using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.SqlClient;
 using System.Text;
 
 namespace Cosmos.Core.DBManger
@@ -17,8 +17,6 @@ namespace Cosmos.Core.DBManger
         private static Dictionary<string, string> DBConnectionPool = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
 
         private static readonly string DefaultConnectionName = "default";
-
-
 
 
         public DBServerProvider()
@@ -60,19 +58,22 @@ namespace Cosmos.Core.DBManger
         }
 
 
-        public IDbConnection GetDbConnection(string connectionString=null)
+        public IDbConnection GetDbConnection(string connectionString = null)
         {
-            if (connectionString==null)
+            if (connectionString == null)
             {
                 connectionString = DBConnectionPool[DefaultConnectionName];
             }
-            else if (DBType.Name== DbCurrentType.MySql.ToString())
+            else if (DBType.Name == DbCurrentType.MySql.ToString())
             {
-                //return new MySql
+                return new MySql.Data.MySqlClient.MySqlConnection(connectionString);
+            }
+            if (DBType.Name == DbCurrentType.PgSql.ToString())
+            {
+                return new NpgsqlConnection(connectionString);
             }
 
-
-            return new SqlConnection(connectionString);
+            return new Microsoft.Data.SqlClient.SqlConnection(connectionString);
         }
     }
 }

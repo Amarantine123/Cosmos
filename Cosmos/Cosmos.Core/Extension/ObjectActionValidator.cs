@@ -12,7 +12,7 @@ namespace Cosmos.Core.Extension
         public static IServiceCollection UseMethodsModelParameters(this IServiceCollection services)
         {
             // Veritify Username, pwd and verification code
-            ValidatorLoginModel.Login.Add<LoginInfo>(x => new
+            ValidatorLoginModel.Login.Add<Sys_LoginInfoEntity>(x => new
             {
                 x.PassWord,
                 x.UserName,
@@ -21,7 +21,7 @@ namespace Cosmos.Core.Extension
             });
 
             // Veritify password
-           ValidatorLoginModel.LoginOnlyPassWord.Add<LoginInfo>(
+           ValidatorLoginModel.LoginOnlyPassWord.Add<Sys_LoginInfoEntity>(
                 x => new
                 {
                     x.PassWord
