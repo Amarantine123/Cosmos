@@ -58,7 +58,7 @@ namespace Cosmos.Core.DBManger
         }
 
 
-        public IDbConnection GetDbConnection(string connectionString = null)
+        public static IDbConnection GetDbConnection(string connectionString = null)
         {
             if (connectionString == null)
             {

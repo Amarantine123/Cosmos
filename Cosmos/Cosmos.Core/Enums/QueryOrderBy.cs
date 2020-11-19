@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cosmos.Core.BaseProvider.BaseRepository
+namespace Cosmos.Core.Enums
 {
-    class BaseRepository
+    public enum QueryOrderBy
     {
+        Desc=1,
+        Asc=2
     }
 }
