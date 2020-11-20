@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Cosmos.Core.BaseProvider.BaseRepository
+namespace Cosmos.Core.Enums
 {
-    class IBaseRepository
+    public enum EntityToSqlTempName
     {
+        TempInsert = 0
     }
 }

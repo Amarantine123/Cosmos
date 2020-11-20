@@ -1,15 +1,41 @@
+<<<<<<< HEAD
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+=======
+﻿using Cosmos.Core.Const;
+using Cosmos.Core.DBManger;
+using Cosmos.Core.Enums;
+using Cosmos.Core.Extension;
+using Cosmos.Core.Utilities;
+using Dapper;
+using Microsoft.Data.SqlClient;
+using MySql.Data.MySqlClient;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Linq.Expressions;
+>>>>>>> dev
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Cosmos.Core.Dapper
 {
+<<<<<<< HEAD
     public class SqlDapper : ISqlDapper
     {
         private string _connectionString;
         private IDbConnection _connection { get; set; }
+=======
+   public class SqlDapper:ISqlDapper
+    {
+        #region Properties
+        private string _connectionString;
+        private bool _transaction { get; set; }
+        private IDbConnection _connection { get; set; }
+        IDbTransaction dbTransaction = null;
+>>>>>>> dev
         public IDbConnection Connection
         {
             get
@@ -21,22 +47,35 @@ namespace Cosmos.Core.Dapper
                 return _connection;
             }
         }
+<<<<<<< HEAD
 
 
+=======
+        #endregion
+
+        #region Constructor
+>>>>>>> dev
         public SqlDapper()
         {
             _connectionString = DBServerProvider.GetConnectionString();
         }
+<<<<<<< HEAD
         /// <summary>
         ///      string mySql = "Data Source=132.232.2.109;Database=mysql;User 
         ///      ID=root;Password=mysql;pooling=true;CharSet=utf8;port=3306;sslmode=none";
         ///  this.conn = new MySql.Data.MySqlClient.MySqlConnection(mySql);
         /// </summary>
         /// <param name="connKeyName"></param>
+=======
+
+        //
+        // connKeyName: Mysql SsSql PgSql
+>>>>>>> dev
         public SqlDapper(string connKeyName)
         {
             _connectionString = DBServerProvider.GetConnectionString(connKeyName);
         }
+<<<<<<< HEAD
 
 
         private bool _transaction { get; set; }
@@ -45,6 +84,11 @@ namespace Cosmos.Core.Dapper
         /// 2020.06.15增加Dapper事务处理
         /// <param name="action"></param>
         /// <param name="error"></param>
+=======
+        #endregion
+
+        #region Transaction 
+>>>>>>> dev
         public void BeginTransaction(Func<ISqlDapper, bool> action, Action<Exception> error)
         {
             _transaction = true;
@@ -74,18 +118,66 @@ namespace Cosmos.Core.Dapper
                 _transaction = false;
             }
         }
+<<<<<<< HEAD
+=======
+        #endregion
+
+        #region Excute
+        private T Execute<T>(Func<IDbConnection, IDbTransaction, T> func, bool beginTransaction = false, bool disposeConn = true)
+        {
+            if (beginTransaction && !_transaction)
+            {
+                Connection.Open();
+                dbTransaction = Connection.BeginTransaction();
+            }
+            try
+            {
+                T reslutT = func(Connection, dbTransaction);
+                if (!_transaction && dbTransaction != null)
+                {
+                    dbTransaction.Commit();
+                }
+                return reslutT;
+            }
+            catch (Exception ex)
+            {
+                if (!_transaction && dbTransaction != null)
+                {
+                    dbTransaction.Rollback();
+                }
+                throw ex;
+            }
+            finally
+            {
+                if (!_transaction)
+                {
+                    if (disposeConn)
+                    {
+                        Connection.Dispose();
+                    }
+                    dbTransaction?.Dispose();
+                }
+            }
+        }
+
+
+        #endregion
+>>>>>>> dev
 
         /// <summary>
         /// var p = new object();
         //        p.Add("@a", 11);
         //p.Add("@b", dbType: DbType.Int32, direction: ParameterDirection.Output);
         //p.Add("@c", dbType: DbType.Int32, direction: ParameterDirection.ReturnValue);
+<<<<<<< HEAD
         //        /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="cmd"></param>
         /// <param name="param"></param>
         /// <param name="commandType"></param>
         /// <returns></returns>
+=======
+>>>>>>> dev
         public List<T> QueryList<T>(string cmd, object param, CommandType? commandType = null, bool beginTransaction = false) where T : class
         {
             return Execute((conn, dbTransaction) =>
@@ -93,6 +185,11 @@ namespace Cosmos.Core.Dapper
                 return conn.Query<T>(cmd, param, dbTransaction, commandType: commandType ?? CommandType.Text).ToList();
             }, beginTransaction);
         }
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> dev
         public T QueryFirst<T>(string cmd, object param, CommandType? commandType = null, bool beginTransaction = false) where T : class
         {
             List<T> list = QueryList<T>(cmd, param, commandType: commandType ?? CommandType.Text, beginTransaction: beginTransaction).ToList();
@@ -152,6 +249,7 @@ namespace Cosmos.Core.Dapper
                 return (reader.Read<T1>().ToList(), reader.Read<T2>().ToList(), reader.Read<T3>().ToList());
             }
         }
+<<<<<<< HEAD
         IDbTransaction dbTransaction = null;
 
         private T Execute<T>(Func<IDbConnection, IDbTransaction, T> func, bool beginTransaction = false, bool disposeConn = true)
@@ -190,24 +288,42 @@ namespace Cosmos.Core.Dapper
                 }
             }
         }
+=======
+        
+
+    
+>>>>>>> dev
         /// <summary>
         /// 
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="entity"></param>
+<<<<<<< HEAD
         /// <param name="updateFileds">指定插入的字段</param>
         /// <param name="beginTransaction">是否开启事务</param>
         /// <returns></returns>
         public int Add<T>(T entity, Expression<Func<T, object>> updateFileds = null, bool beginTransaction = false)
         {
             return AddRange<T>(new T[] { entity });
+=======
+        /// <param name="addFileds">指定插入的字段</param>
+        /// <param name="beginTransaction">是否开启事务</param>
+        /// <returns></returns>
+        public int Add<T>(T entity, Expression<Func<T, object>> addFileds = null, bool beginTransaction = false)
+        {
+            return AddRange<T>(new T[] { entity }, addFileds, beginTransaction);
+>>>>>>> dev
         }
         /// <summary>
         /// 
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="entities"></param>
+<<<<<<< HEAD
         /// <param name="updateFileds">指定插入的字段</param>
+=======
+        /// <param name="addFileds">指定插入的字段</param>
+>>>>>>> dev
         /// <param name="beginTransaction">是否开启事务</param>
         /// <returns></returns>
         public int AddRange<T>(IEnumerable<T> entities, Expression<Func<T, object>> addFileds = null, bool beginTransaction = true)
@@ -257,7 +373,11 @@ namespace Cosmos.Core.Dapper
             return Execute<int>((conn, dbTransaction) =>
             {
                 //todo pgsql待实现
+<<<<<<< HEAD
                 return conn.Execute(sql, (DBType.Name == DbCurrentType.MySql.ToString() || DBType.Name == DbCurrentType.PgSql.ToString()) ? entities.ToList() : null);
+=======
+                return conn.Execute(sql, (DBType.Name == DbCurrentType.MySql.ToString() || DBType.Name == DbCurrentType.PgSql.ToString()) ? entities.ToList() : null, dbTransaction);
+>>>>>>> dev
             }, beginTransaction);
         }
 
@@ -333,9 +453,24 @@ namespace Cosmos.Core.Dapper
             string joinKeys = (fieldType == FieldType.Int || fieldType == FieldType.BigInt)
                  ? string.Join(",", keys)
                  : $"'{string.Join("','", keys)}'";
+<<<<<<< HEAD
 
             string sql = $"DELETE FROM {entityType.GetEntityTableName() } where {tKey} in ({joinKeys});";
             return (int)ExecuteScalar(sql, null);
+=======
+            string sql;
+            // 2020.08.06增加pgsql删除功能
+            if (DBType.Name == DbCurrentType.PgSql.ToString())
+            {
+                sql = $"DELETE FROM \"public\".\"{entityType.GetEntityTableName()}\" where \"{tKey}\" in ({joinKeys});";
+            }
+            else
+            {
+                sql = $"DELETE FROM {entityType.GetEntityTableName() } where {tKey} in ({joinKeys});";
+            }
+
+            return ExcuteNonQuery(sql, null);
+>>>>>>> dev
         }
         /// <summary>
         /// 使用key批量删除
@@ -390,8 +525,14 @@ namespace Cosmos.Core.Dapper
                 return MySqlBulkInsert(table, tableName, fileName, tmpPath);
             else if (Connection.GetType().Name == "NpgsqlConnection")
             {
+<<<<<<< HEAD
                 //todo pgsql待实现
                 throw new Exception("Pgsql的批量插入没实现,可以先把日志start注释跑起来，\\Vue.Net\\VOL.Core\\Services\\Logger.cs");
+=======
+                // 2020.08.07增加PGSQL批量写入
+                PGSqlBulkInsert(table, tableName);
+                return 0;
+>>>>>>> dev
             }
             return MSSqlBulkInsert(table, tableName, sqlBulkCopyOptions ?? SqlBulkCopyOptions.KeepIdentity);
         }
@@ -483,6 +624,44 @@ namespace Cosmos.Core.Dapper
 
             return sb.ToString();
         }
+<<<<<<< HEAD
+=======
+        /// <summary>
+        /// 2020.08.07增加PGSQL批量写入
+        /// </summary>
+        /// <param name="table"></param>
+        /// <param name="tableName"></param>
+        private void PGSqlBulkInsert(DataTable table, string tableName)
+        {
+            List<string> columns = new List<string>();
+            for (int i = 0; i < table.Columns.Count; i++)
+            {
+                columns.Add("\"" + table.Columns[i].ColumnName + "\"");
+            }
+            string copySql = $"copy \"public\".\"{tableName}\"({string.Join(',', columns)}) FROM STDIN (FORMAT BINARY)";
+            using (var conn = new Npgsql.NpgsqlConnection(_connectionString))
+            {
+                conn.Open();
+                using (var writer = conn.BeginBinaryImport(copySql))
+                {
+                    foreach (DataRow row in table.Rows)
+                    {
+                        writer.StartRow();
+                        for (int i = 0; i < table.Columns.Count; i++)
+                        {
+                            writer.Write(row[i]);
+                        }
+                    }
+                    writer.Complete();
+                }
+            }
+        }
+
+        SqlMapper.GridReader ISqlDapper.QueryMultiple(string cmd, object param, CommandType? commandType, bool beginTransaction)
+        {
+            throw new NotImplementedException();
+        }
+>>>>>>> dev
 
 
     }
