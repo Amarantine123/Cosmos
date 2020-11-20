@@ -1,24 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Study\\MyProjects\\Cosmos\\Cosmos\\Cosmos.Entity\\Cosmos.Entity.csproj": {}
+    "G:\\H-WorkStation\\NetCore\\Cosmos\\Cosmos\\Cosmos.Entity\\Cosmos.Entity.csproj": {}
   },
   "projects": {
-    "C:\\Study\\MyProjects\\Cosmos\\Cosmos\\Cosmos.Entity\\Cosmos.Entity.csproj": {
+    "G:\\H-WorkStation\\NetCore\\Cosmos\\Cosmos\\Cosmos.Entity\\Cosmos.Entity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Study\\MyProjects\\Cosmos\\Cosmos\\Cosmos.Entity\\Cosmos.Entity.csproj",
+        "projectUniqueName": "G:\\H-WorkStation\\NetCore\\Cosmos\\Cosmos\\Cosmos.Entity\\Cosmos.Entity.csproj",
         "projectName": "Cosmos.Entity",
-        "projectPath": "C:\\Study\\MyProjects\\Cosmos\\Cosmos\\Cosmos.Entity\\Cosmos.Entity.csproj",
+        "projectPath": "G:\\H-WorkStation\\NetCore\\Cosmos\\Cosmos\\Cosmos.Entity\\Cosmos.Entity.csproj",
         "packagesPath": "C:\\Users\\baron\\.nuget\\packages\\",
-        "outputPath": "C:\\Study\\MyProjects\\Cosmos\\Cosmos\\Cosmos.Entity\\obj\\",
+        "outputPath": "G:\\H-WorkStation\\NetCore\\Cosmos\\Cosmos\\Cosmos.Entity\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\baron\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
