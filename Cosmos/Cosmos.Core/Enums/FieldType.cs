@@ -15,3 +15,4 @@ namespace Cosmos.Core.Enums
         UniqueIdentifier
 
     }
+}
