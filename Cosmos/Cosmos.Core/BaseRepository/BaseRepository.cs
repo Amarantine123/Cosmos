@@ -6,6 +6,7 @@ using Cosmos.Core.Utilities;
 using Cosmos.Entity;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
@@ -16,7 +17,7 @@ using System.Threading.Tasks;
 
 namespace Cosmos.Core.BaseProvider.BaseRepository
 {
-    public abstract class BaseRepository<TEntity> : IRepository<TEntity> where TEntity : BaseEntity
+    public abstract class BaseRepository<TEntity> : IBaseRepository<TEntity> where TEntity : BaseEntity
     {
         #region Public Properties
         public CosmosContext DefaultDbContext { get; set; }
@@ -50,38 +51,71 @@ namespace Cosmos.Core.BaseProvider.BaseRepository
 
         #endregion
 
+        #region Transaction
+        public virtual HttpResponse DbContextBeginTransaction(Func<HttpResponse> action)
+        {
+            HttpResponse webResponse = new HttpResponse();
+            using (IDbContextTransaction transaction = DefaultDbContext.Database.BeginTransaction())
+            {
+                try
+                {
+                    webResponse = action();
+                    if (webResponse.Status)
+                    {
+                        transaction.Commit();
+                    }
+                    else
+                    {
+                        transaction.Rollback();
+                    }
 
+                    return webResponse;
+                }
+                catch (Exception ex)
+                {
+                    transaction.Rollback();
+                    return new HttpResponse().Error(ex.Message);
+                }
+            }
+        }
+
+        #endregion
 
         #region Add Methods
-        public void Add(TEntity entities, bool SaveChanges = false)
+        public void Add(TEntity entitie, bool saveChanges = false)
         {
-
+            DBSet.Add(entitie);
+            if (saveChanges)
+            {
+                EFContext.SaveChanges();
+            }
         }
 
-        public void AddRange(IEnumerable<TEntity> entities, bool SaveChanges = false)
+        public void AddRange(IEnumerable<TEntity> entities, bool saveChanges = false)
         {
-
+            DBSet.AddRange(entities);
+            if (saveChanges)
+            {
+                EFContext.SaveChanges();
+            }
         }
-
 
         public void AddRange<T>(IEnumerable<T> entities, bool saveChanges = false) where T : class
         {
-            throw new NotImplementedException();
+            EFContext.Set<T>().AddRange(entities);
+            if (saveChanges)
+            {
+                EFContext.SaveChanges();
+            }
         }
         #endregion
+
 
         #region Insert
 
         public void BulkInsert(IEnumerable<TEntity> entities, bool setOutputIdentity = false)
         {
             
-        }
-        #endregion
-
-        #region Transaction
-        public HttpResponse DbContextBeginTransaction(Func<HttpResponse> action)
-        {
-            throw new NotImplementedException();
         }
         #endregion
 

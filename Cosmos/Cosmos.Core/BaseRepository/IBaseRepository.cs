@@ -15,7 +15,7 @@ using System.Threading.Tasks;
 namespace Cosmos.Core.BaseProvider.BaseRepository
 {
     // Base Repository
-    public interface IRepository<TEntity> where TEntity : BaseEntity
+    public interface IBaseRepository<TEntity> where TEntity : BaseEntity
     {
         CosmosContext DefaultDbContext { get; }
         ISqlDapper DapperContext { get; }
