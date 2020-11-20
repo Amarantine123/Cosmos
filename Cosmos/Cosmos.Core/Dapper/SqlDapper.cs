@@ -1,6 +1,11 @@
-﻿using Cosmos.Core.DBManger;
+﻿using Cosmos.Core.Const;
+using Cosmos.Core.DBManger;
+using Cosmos.Core.Enums;
+using Cosmos.Core.Extension;
+using Cosmos.Core.Utilities;
 using Dapper;
 using Microsoft.Data.SqlClient;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -533,34 +538,6 @@ namespace Cosmos.Core.Dapper
             throw new NotImplementedException();
         }
 
-        public int Add<T>(T entity, Expression<Func<T, object>> updateFileds = null, bool beginTransaction = false)
-        {
-            throw new NotImplementedException();
-        }
 
-        public int AddRange<T>(IEnumerable<T> entities, Expression<Func<T, object>> updateFileds = null, bool beginTransaction = false)
-        {
-            throw new NotImplementedException();
-        }
-
-        public int Update<T>(T entity, Expression<Func<T, object>> updateFileds = null, bool beginTransaction = false)
-        {
-            throw new NotImplementedException();
-        }
-
-        public int UpdateRange<T>(IEnumerable<T> entities, Expression<Func<T, object>> updateFileds = null, bool beginTransaction = false)
-        {
-            throw new NotImplementedException();
-        }
-
-        public int BulkInsert(DataTable table, string tableName, SqlBulkCopyOptions? sqlBulkCopyOptions = null, string fileName = null, string tmpPath = null)
-        {
-            throw new NotImplementedException();
-        }
-
-        public int BulkInsert<T>(List<T> entities, string tableName = null, Expression<Func<T, object>> columns = null, SqlBulkCopyOptions? sqlBulkCopyOptions = null)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

@@ -1,9 +1,11 @@
 ﻿using Cosmos.Core.Dapper;
 using Cosmos.Core.DBEFContext;
+using Cosmos.Core.DBManger;
 using Cosmos.Core.Enums;
 using Cosmos.Core.Utilities;
 using Cosmos.Entity;
 using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
@@ -19,7 +21,7 @@ namespace Cosmos.Core.BaseProvider.BaseRepository
         #region Public Properties
         public CosmosContext DefaultDbContext { get; set; }
 
-        public ISqlDapper DapperContext => throw new NotImplementedException();
+        public ISqlDapper DapperContext { get { return DBServerProvider.GetSqlDapper<TEntity>(); } }
 
         #endregion
 
@@ -27,6 +29,11 @@ namespace Cosmos.Core.BaseProvider.BaseRepository
         private CosmosContext EFContext
         {
             get { return DefaultDbContext; }
+        }
+
+        private DbSet<TEntity> DBSet
+        {
+            get { return EFContext.Set<TEntity>(); }
         }
         #endregion
 
@@ -45,34 +52,40 @@ namespace Cosmos.Core.BaseProvider.BaseRepository
 
 
 
-
-       
-
+        #region Add Methods
         public void Add(TEntity entities, bool SaveChanges = false)
         {
-            throw new NotImplementedException();
+
         }
 
         public void AddRange(IEnumerable<TEntity> entities, bool SaveChanges = false)
         {
-            throw new NotImplementedException();
+
         }
+
 
         public void AddRange<T>(IEnumerable<T> entities, bool saveChanges = false) where T : class
         {
             throw new NotImplementedException();
         }
+        #endregion
+
+        #region Insert
 
         public void BulkInsert(IEnumerable<TEntity> entities, bool setOutputIdentity = false)
         {
-            throw new NotImplementedException();
+            
         }
+        #endregion
 
+        #region Transaction
         public HttpResponse DbContextBeginTransaction(Func<HttpResponse> action)
         {
             throw new NotImplementedException();
         }
+        #endregion
 
+        #region Delete
         public void Delete(TEntity model, bool saveChanges = false)
         {
             throw new NotImplementedException();
@@ -82,12 +95,17 @@ namespace Cosmos.Core.BaseProvider.BaseRepository
         {
             throw new NotImplementedException();
         }
+        #endregion
 
+        #region Execute
         public int ExecuteSqlCommand(string sql, params SqlParameter[] sqlParameters)
         {
             throw new NotImplementedException();
         }
 
+        #endregion
+
+        #region Exists
         public bool Exists(Expression<Func<TEntity, bool>> predicate)
         {
             throw new NotImplementedException();
@@ -97,7 +115,9 @@ namespace Cosmos.Core.BaseProvider.BaseRepository
         {
             throw new NotImplementedException();
         }
+        #endregion
 
+        #region Exists Async
         public Task<bool> ExistsAsync(Expression<Func<TEntity, bool>> predicate)
         {
             throw new NotImplementedException();
@@ -107,7 +127,9 @@ namespace Cosmos.Core.BaseProvider.BaseRepository
         {
             throw new NotImplementedException();
         }
+        #endregion
 
+        #region Find
         public List<TEntity> Find(Expression<Func<TEntity, bool>> where)
         {
             throw new NotImplementedException();
@@ -117,6 +139,7 @@ namespace Cosmos.Core.BaseProvider.BaseRepository
         {
             throw new NotImplementedException();
         }
+
 
         public List<TFind> Find<TFind>(Expression<Func<TFind, bool>> predicate) where TFind : class
         {
@@ -142,6 +165,10 @@ namespace Cosmos.Core.BaseProvider.BaseRepository
         {
             throw new NotImplementedException();
         }
+
+        #endregion
+
+        #region Find Async
 
         public Task<List<TFind>> FindAsync<TFind>(Expression<Func<TFind, bool>> predicate) where TFind : class
         {
@@ -183,6 +210,9 @@ namespace Cosmos.Core.BaseProvider.BaseRepository
             throw new NotImplementedException();
         }
 
+        #endregion
+
+        #region From Sql
         public List<TEntity> FromSql(string sql, params SqlParameter[] sqlParameters)
         {
             throw new NotImplementedException();
@@ -192,12 +222,16 @@ namespace Cosmos.Core.BaseProvider.BaseRepository
         {
             throw new NotImplementedException();
         }
+        #endregion
 
+        #region Include
         public Microsoft.EntityFrameworkCore.Query.IIncludableQueryable<TEntity, TProperty> Include<TProperty>(Expression<Func<TEntity, TProperty>> incluedProperty)
         {
             throw new NotImplementedException();
         }
+        #endregion
 
+        #region Queryable Page
         public IQueryable<TFind> IQueryablePage<TFind>(int pageIndex, int pagesize, out int rowcount, Expression<Func<TFind, bool>> predicate, Expression<Func<TEntity, Dictionary<object, QueryOrderBy>>> orderBy, bool returnRowCount = true) where TFind : class
         {
             throw new NotImplementedException();
@@ -222,17 +256,9 @@ namespace Cosmos.Core.BaseProvider.BaseRepository
         {
             throw new NotImplementedException();
         }
+        #endregion
 
-        public int SaveChanges()
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<int> SaveChangesAsync()
-        {
-            throw new NotImplementedException();
-        }
-
+        #region Update
         public int Update(TEntity entity, Expression<Func<TEntity, object>> properties, bool saveChanges = false)
         {
             throw new NotImplementedException();
@@ -272,5 +298,24 @@ namespace Cosmos.Core.BaseProvider.BaseRepository
         {
             throw new NotImplementedException();
         }
+        #endregion 
+
+        #region Save Changes
+        public int SaveChanges()
+        {
+            throw new NotImplementedException();
+        }
+        #endregion
+
+        #region Save Changes Async
+        public Task<int> SaveChangesAsync()
+        {
+            throw new NotImplementedException();
+        }
+        #endregion
+
+
+
+     
     }
 }
